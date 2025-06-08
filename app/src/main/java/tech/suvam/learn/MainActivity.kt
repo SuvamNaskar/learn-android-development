@@ -1,5 +1,6 @@
 package tech.suvam.learn
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val darkBtn = findViewById<Button>(R.id.darkBtn)
         val lightBtn = findViewById<Button>(R.id.lightBtn)
+        val nextBtn = findViewById<Button>(R.id.next_btn)
         val layout = findViewById<LinearLayout>(R.id.main)
         var mode = "light"
 
@@ -43,6 +45,11 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(applicationContext, "Already in Light Mode", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        nextBtn.setOnClickListener {
+            intent = Intent(applicationContext, home::class.java)
+            startActivity(intent)
         }
     }
 }
