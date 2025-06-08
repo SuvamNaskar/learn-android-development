@@ -4,6 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red_alpha">#FE5D26</color>
     <color name="biola">#3F83FF</color>
-    <color name="yellow_bg">#FFFF00</color>
-    <color name="odd_btn">#28ff19</color>
+    <color name="yellow_bg">#FAFFCA</color>
+    <color name="odd_btn">#67AE6E</color>
 </resources>
