@@ -25,7 +25,15 @@ class MainActivity : AppCompatActivity() {
         val lightBtn = findViewById<Button>(R.id.lightBtn)
         val nextBtn = findViewById<Button>(R.id.next_btn)
         val layout = findViewById<LinearLayout>(R.id.main)
-        var mode = "light"
+        // Retrieve the mode from the intent
+        var mode = intent.getStringExtra("mode") ?: "light"
+
+        // Set the background based on the mode
+        if (mode == "dark") {
+            layout.setBackgroundResource(R.color.black)
+        } else {
+            layout.setBackgroundResource(R.color.yellow_bg)
+        }
 
         darkBtn.setOnClickListener {
             if (mode == "light") {
@@ -47,9 +55,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        // Carry the mode to the next activity
         nextBtn.setOnClickListener {
             intent = Intent(applicationContext, home::class.java)
+            intent.putExtra("mode", mode)
             startActivity(intent)
+            finish()
         }
     }
 }
