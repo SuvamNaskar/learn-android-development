@@ -45,12 +45,18 @@ class home : AppCompatActivity() {
         val backbtn = findViewById<Button>(R.id.backbtn)
         val webBtn = findViewById<Button>(R.id.webBtn)
         val cameraBtn = findViewById<Button>(R.id.cameraBtn)
+        val InAppWebBtn = findViewById<Button>(R.id.inAppWebBtn)
 
         backbtn.setOnClickListener {
             val intent = Intent(applicationContext, MainActivity::class.java)
             intent.putExtra("mode", mode) // Carry the mode back to MainActivity
             startActivity(intent)
             finish()
+        }
+
+        InAppWebBtn.setOnClickListener {
+            val intent = Intent(applicationContext, WebAcitivity::class.java)
+            startActivity(intent)
         }
 
         webBtn.setOnClickListener {
