@@ -6,6 +6,7 @@
     <string name="welcome_note">Hello, Welcome to the App - created by Suvam Naskar</string>
     <string name="go_back">Go Back</string>
 
-    <string name="webBtn">Web View</string>
+    <string name="webBrowserBtn">View in browser</string>
+    <string name="webInAppBtn">View in App</string>
     <string name="cameraBtn">Camera</string>
 </resources>
