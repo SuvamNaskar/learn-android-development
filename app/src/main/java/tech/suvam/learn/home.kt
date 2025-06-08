@@ -1,6 +1,8 @@
 package tech.suvam.learn
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,13 @@ class home : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val backbtn = findViewById<Button>(R.id.backbtn)
+
+        backbtn.setOnClickListener {
+            intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
