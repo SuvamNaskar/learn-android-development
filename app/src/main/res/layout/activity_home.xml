@@ -25,13 +25,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/webBtn"
-        android:layout_marginHorizontal="10dp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/green_67AE6E"
-        android:text="@string/webBtn" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/webBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/green_67AE6E"
+            android:text="@string/webBrowserBtn" />
+
+        <Button
+            android:id="@+id/inAppWebBtn"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/webInAppBtn" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
