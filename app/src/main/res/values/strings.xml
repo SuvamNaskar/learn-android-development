@@ -2,4 +2,6 @@
     <string name="app_name">Learn</string>
     <string name="dark">Dark Mode</string>
     <string name="light">Light Mode</string>
+    <string name="next">Next ></string>
+    <string name="welcome_note">Hello, Welcome to the App - created by Suvam Naskar</string>
 </resources>
