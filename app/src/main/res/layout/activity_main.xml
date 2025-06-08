@@ -45,7 +45,7 @@
 
         <Button
             android:id="@+id/next_btn"
-            android:backgroundTint="@color/odd_btn"
+            android:backgroundTint="@color/green_67AE6E"
             android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
