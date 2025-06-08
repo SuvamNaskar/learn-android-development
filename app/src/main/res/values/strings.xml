@@ -4,4 +4,5 @@
     <string name="light">Light Mode</string>
     <string name="next">Next ></string>
     <string name="welcome_note">Hello, Welcome to the App - created by Suvam Naskar</string>
+    <string name="go_back">Go Back</string>
 </resources>
