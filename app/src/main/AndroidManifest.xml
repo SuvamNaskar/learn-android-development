@@ -15,10 +15,13 @@
         android:theme="@style/Theme.Learn"
         tools:targetApi="31">
         <activity
+            android:name=".Theme"
+            android:exported="false" />
+        <activity
             android:name=".WebAcitivity"
             android:exported="false" />
         <activity
-            android:name=".home"
+            android:name=".Home"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

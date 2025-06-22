@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class home : AppCompatActivity() {
+class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -48,7 +48,7 @@ class home : AppCompatActivity() {
         val InAppWebBtn = findViewById<Button>(R.id.inAppWebBtn)
 
         backbtn.setOnClickListener {
-            val intent = Intent(applicationContext, MainActivity::class.java)
+            val intent = Intent(applicationContext, Theme::class.java)
             intent.putExtra("mode", mode) // Carry the mode back to MainActivity
             startActivity(intent)
             finish()

@@ -9,4 +9,6 @@
     <string name="webBrowserBtn">View in browser</string>
     <string name="webInAppBtn">View in App</string>
     <string name="cameraBtn">Camera</string>
+
+    <string name="splash_image_desc">Image of Suvam Naskar</string>
 </resources>
