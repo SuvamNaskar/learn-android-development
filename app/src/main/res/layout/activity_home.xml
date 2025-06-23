@@ -17,13 +17,9 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:gravity="center"
-        android:layout_marginTop="230dp"
-        android:layout_marginBottom="300dp"
-        android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="250dp"
+        android:padding="10dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,10 +49,10 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/backbtn"
+            android:id="@+id/themebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/go_back"
+            android:text="@string/theme"
             android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
