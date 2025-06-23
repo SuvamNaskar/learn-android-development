@@ -42,16 +42,15 @@ class Home : AppCompatActivity() {
             findViewById<TextView>(R.id.textView).setTextColor(ContextCompat.getColor(this, R.color.black))
         }
 
-        val backbtn = findViewById<Button>(R.id.backbtn)
+        val themebtn = findViewById<Button>(R.id.themebtn)
         val webBtn = findViewById<Button>(R.id.webBtn)
         val cameraBtn = findViewById<Button>(R.id.cameraBtn)
         val InAppWebBtn = findViewById<Button>(R.id.inAppWebBtn)
 
-        backbtn.setOnClickListener {
+        themebtn.setOnClickListener {
             val intent = Intent(applicationContext, Theme::class.java)
             intent.putExtra("mode", mode) // Carry the mode back to MainActivity
             startActivity(intent)
-            finish()
         }
 
         InAppWebBtn.setOnClickListener {
