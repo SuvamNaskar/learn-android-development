@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         Handler().postDelayed({
-            val intent = Intent(applicationContext, Theme::class.java)
+            val intent = Intent(applicationContext, Signup::class.java)
             startActivity(intent)
             finish()
         }, 1500) // 2 seconds delay
